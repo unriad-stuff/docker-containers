@@ -8,7 +8,7 @@
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
     <Support>https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB/issues</Support>
-    <Project>https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB</Project>
+    <Project>https://github.com/barrycarey/Plex-Data-Collector-For-InfluxDB</Project>
     <Overview>A speedtest docker container that forwards the data to influxDB. Download the config.ini file from https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB/blob/master/config.ini before you start the container.</Overview>
     <Category>Cloud: Network:Web</Category>
     <WebUI/>
