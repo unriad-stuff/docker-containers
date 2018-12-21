@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>Plex Data Collector for InfluxDB/Name>
+    <Name>Plex Data Collector for InfluxDB</Name>
     <Repository>achumchal/plex_data_collector_for_influxdb</Repository>
     <Registry>https://hub.docker.com/r/achumchal/plex_data_collector_for_influxdb</Registry>
     <Network>bridge</Network>
