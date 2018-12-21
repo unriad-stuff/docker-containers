@@ -9,7 +9,7 @@
     <Privileged>false</Privileged>
     <Support>https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB/issues</Support>
     <Project>https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB</Project>
-    <Overview>A speedtest docker container that forwards the data to influxDB. Download the config.ini file from https://github.com/barrycarey/Speedtest-for-InfluxDB-and-Grafana/blob/master/config.ini before you start the container.</Overview>
+    <Overview>A speedtest docker container that forwards the data to influxDB. Download the config.ini file from https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB/blob/master/config.ini before you start the container.</Overview>
     <Category>Cloud: Network:Web</Category>
     <WebUI/>
     <TemplateURL>https://github.com/unriad-stuff/docker-containers</TemplateURL>
