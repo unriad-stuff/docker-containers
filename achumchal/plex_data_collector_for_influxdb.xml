@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+<Category></Category>
+  <Name>Plex Data Collector for InfluxDB</Name>
+  <Overview>
+    Collects data about your Plex server and sends it to InfluxDB
+  </Overview>
+  <Description>
+
+  </Description>
+  <Registry>https://hub.docker.com/r/achumchal/plex_data_collector_for_influxdb</Registry>
+  <GitHub>https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB</GitHub>
+  <Repository>achumchal/plex_data_collector_for_influxdb</Repository>
+  <Support>https://github.com/unriad-stuff/Plex-Data-Collector-For-InfluxDB/issues</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/speedtest-influxdb/config.ini</HostDir>
+      <ContainerDir>/src/config.ini</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <Icon></Icon>
+</Containers>
