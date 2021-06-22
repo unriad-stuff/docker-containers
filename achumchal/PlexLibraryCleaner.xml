@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PlexLibraryCleaner</Name>
+  <Repository>selexin/plex-library-cleaner</Repository>
+  <Registry>https://hub.docker.com/r/selexin/plex-library-cleaner/builds</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/se1exin/Plex-Library-Cleaner/issues</Support>
+  <Project>https://github.com/se1exin/Plex-Library-Cleaner</Support>
+  <Overview>A simple UI to help find and delete duplicate and sample files from your Plex server.</Overview>
+  <Category>WebServer:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/unriad-stuff/docker-containers/master/achumchal/PlexLibraryCleaner.xml</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>http://192.169.1.100:32400</Value>
+      <Name>PLEX_BASE_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>somerandomstring</Value>
+      <Name>PLEX_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Movies</Value>
+      <Name>LIBRARY_NAMES</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Plex Base URL" Target="PLEX_BASE_URL" Default="http://192.169.1.100:32400" Mode="" Description="Container Variable: PLEX_BASE_URL" Type="Variable" Display="always" Required="true" Mask="false">http://192.169.1.100:32400</Config>
+  <Config Name="Plex Token" Target="PLEX_TOKEN" Default="somerandomstring" Mode="" Description="Container Variable: PLEX_TOKEN" Type="Variable" Display="always" Required="true" Mask="true">somerandomstring</Config>
+  <Config Name="Library Names" Target="LIBRARY_NAMES" Default="Movies; TV Shows" Mode="" Description="Container Variable: LIBRARY_NAMES" Type="Variable" Display="always" Required="true" Mask="false">Movies</Config>
+  <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+</Container>
